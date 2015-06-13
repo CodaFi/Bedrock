@@ -29,7 +29,6 @@
 		75D2C16B1B2C034D00EDB0EC /* BedrockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BedrockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75D2C1711B2C034D00EDB0EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75D2C17C1B2C064F00EDB0EC /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
-		75D2C17E1B2C074F00EDB0EC /* BedrockTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BedrockTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		75D2C1841B2C0A9100EDB0EC /* ColorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,7 +57,6 @@
 				75D2C1621B2C034D00EDB0EC /* Bedrock */,
 				75D2C16F1B2C034D00EDB0EC /* BedrockTests */,
 				75D2C1611B2C034D00EDB0EC /* Products */,
-				75D2C17E1B2C074F00EDB0EC /* BedrockTests-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
