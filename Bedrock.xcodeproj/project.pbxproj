@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		75D2C16C1B2C034D00EDB0EC /* Bedrock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D2C1601B2C034D00EDB0EC /* Bedrock.framework */; };
 		75D2C17D1B2C064F00EDB0EC /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D2C17C1B2C064F00EDB0EC /* Color.swift */; };
-		75D2C1821B2C077F00EDB0EC /* ColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D2C1811B2C077F00EDB0EC /* ColorTests.swift */; };
 		75D2C1831B2C08F500EDB0EC /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D2C17C1B2C064F00EDB0EC /* Color.swift */; };
+		75D2C1851B2C0A9100EDB0EC /* ColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D2C1841B2C0A9100EDB0EC /* ColorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +30,7 @@
 		75D2C1711B2C034D00EDB0EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75D2C17C1B2C064F00EDB0EC /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		75D2C17E1B2C074F00EDB0EC /* BedrockTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BedrockTests-Bridging-Header.h"; sourceTree = "<group>"; };
-		75D2C1811B2C077F00EDB0EC /* ColorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorTests.swift; path = ../ColorTests.swift; sourceTree = "<group>"; };
+		75D2C1841B2C0A9100EDB0EC /* ColorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +91,7 @@
 		75D2C16F1B2C034D00EDB0EC /* BedrockTests */ = {
 			isa = PBXGroup;
 			children = (
-				75D2C1811B2C077F00EDB0EC /* ColorTests.swift */,
+				75D2C1841B2C0A9100EDB0EC /* ColorTests.swift */,
 				75D2C1701B2C034D00EDB0EC /* Supporting Files */,
 			);
 			path = BedrockTests;
@@ -219,7 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75D2C1821B2C077F00EDB0EC /* ColorTests.swift in Sources */,
+				75D2C1851B2C0A9100EDB0EC /* ColorTests.swift in Sources */,
 				75D2C1831B2C08F500EDB0EC /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
