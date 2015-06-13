@@ -14,7 +14,7 @@ struct Color {
     let blueComponent: Double
     let alphaComponent: Double
     
-    init (red: Double, green: Double, blue: Double, alpha: Double = 0) {
+    init (red: Double, green: Double, blue: Double, alpha: Double = 1) {
         redComponent = red
         greenComponent = green
         blueComponent = blue
