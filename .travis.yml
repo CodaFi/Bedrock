@@ -1,0 +1,7 @@
+language: swift
+osx_image: beta-xcode6.3
+
+script:
+    - xctool -project Bedrock.xcodeproj -scheme Bedrock -sdk macosx ONLY_ACTIVE_ARCH=NO clean build test
+    - xctool -project Bedrock.xcodeproj -scheme Bedrock-iOS -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO clean build test
+

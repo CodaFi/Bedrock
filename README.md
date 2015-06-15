@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/rsmoz/Bedrock.svg?branch=master)](https://travis-ci.org/rsmoz/Bedrock)
+
 #Bedrock
 ###bed·rock
 ###*n.* any firm foundation or basis
