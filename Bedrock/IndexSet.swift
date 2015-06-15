@@ -86,7 +86,7 @@ extension IndexSet {
 		var rightmostRangeindex = idx
 		for var i = idx; i < ranges.count; i++ {
 			// Search until we can search no more
-			if !rangeIntersectsRange(ranges[i], other: targetRange) {
+			if !rangeIntersectsRange(ranges[i], targetRange) {
 				break
 			}
 			rightmostRangeindex = i
@@ -121,14 +121,14 @@ extension IndexSet {
 		let midRange = _ranges[mid]
 
 		if leftBound == rightBound {
-			if midRange.contains(idx) {
+			if contains(midRange, idx) {
 				return leftBound
 			} else {
 				return -1
 			}
 		}
 
-		if midRange.contains(idx) {
+		if contains(midRange, idx) {
 			return mid
 		}
 

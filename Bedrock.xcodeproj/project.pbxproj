@@ -11,6 +11,14 @@
 		75D2C17D1B2C064F00EDB0EC /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D2C17C1B2C064F00EDB0EC /* Color.swift */; };
 		75D2C1831B2C08F500EDB0EC /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D2C17C1B2C064F00EDB0EC /* Color.swift */; };
 		75D2C1851B2C0A9100EDB0EC /* ColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D2C1841B2C0A9100EDB0EC /* ColorTests.swift */; };
+		84554EBE1B2EAEA9000BA8EA /* Bedrock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84554EB31B2EAEA9000BA8EA /* Bedrock.framework */; };
+		84554ECD1B2EAEFF000BA8EA /* Bedrock.h in Headers */ = {isa = PBXBuildFile; fileRef = 84554ECC1B2EAEFF000BA8EA /* Bedrock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84554ECE1B2EAEFF000BA8EA /* Bedrock.h in Headers */ = {isa = PBXBuildFile; fileRef = 84554ECC1B2EAEFF000BA8EA /* Bedrock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84554ECF1B2EAF69000BA8EA /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D2C17C1B2C064F00EDB0EC /* Color.swift */; };
+		84554ED01B2EAF69000BA8EA /* IndexSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846CC24B1B2E6F3D00952C20 /* IndexSet.swift */; };
+		84554ED11B2EAF6D000BA8EA /* ColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D2C1841B2C0A9100EDB0EC /* ColorTests.swift */; };
+		84554ED21B2EAF6D000BA8EA /* IndexSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846CC24D1B2E814800952C20 /* IndexSetTests.swift */; };
+		84554ED41B2EB22E000BA8EA /* Bedrock.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84554EB31B2EAEA9000BA8EA /* Bedrock.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		846CC24C1B2E6F3D00952C20 /* IndexSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846CC24B1B2E6F3D00952C20 /* IndexSet.swift */; };
 		846CC24E1B2E814800952C20 /* IndexSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846CC24D1B2E814800952C20 /* IndexSetTests.swift */; };
 /* End PBXBuildFile section */
@@ -23,7 +31,27 @@
 			remoteGlobalIDString = 75D2C15F1B2C034D00EDB0EC;
 			remoteInfo = Bedrock;
 		};
+		84554EBF1B2EAEA9000BA8EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75D2C1571B2C034D00EDB0EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84554EB21B2EAEA9000BA8EA;
+			remoteInfo = "Bedrock-iOS";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		84554ED31B2EB227000BA8EA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				84554ED41B2EB22E000BA8EA /* Bedrock.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		75D2C1601B2C034D00EDB0EC /* Bedrock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bedrock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,6 +60,9 @@
 		75D2C1711B2C034D00EDB0EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75D2C17C1B2C064F00EDB0EC /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		75D2C1841B2C0A9100EDB0EC /* ColorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorTests.swift; sourceTree = "<group>"; };
+		84554EB31B2EAEA9000BA8EA /* Bedrock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bedrock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84554EBD1B2EAEA9000BA8EA /* Bedrock-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bedrock-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84554ECC1B2EAEFF000BA8EA /* Bedrock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bedrock.h; path = Bedrock/Bedrock.h; sourceTree = "<group>"; };
 		846CC24B1B2E6F3D00952C20 /* IndexSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexSet.swift; sourceTree = "<group>"; };
 		846CC24D1B2E814800952C20 /* IndexSetTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexSetTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,12 +83,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		84554EAF1B2EAEA9000BA8EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84554EBA1B2EAEA9000BA8EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84554EBE1B2EAEA9000BA8EA /* Bedrock.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		75D2C1561B2C034D00EDB0EC = {
 			isa = PBXGroup;
 			children = (
+				84554ECC1B2EAEFF000BA8EA /* Bedrock.h */,
 				75D2C1621B2C034D00EDB0EC /* Bedrock */,
 				75D2C16F1B2C034D00EDB0EC /* BedrockTests */,
 				75D2C1611B2C034D00EDB0EC /* Products */,
@@ -69,6 +116,8 @@
 			children = (
 				75D2C1601B2C034D00EDB0EC /* Bedrock.framework */,
 				75D2C16B1B2C034D00EDB0EC /* BedrockTests.xctest */,
+				84554EB31B2EAEA9000BA8EA /* Bedrock.framework */,
+				84554EBD1B2EAEA9000BA8EA /* Bedrock-iOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,9 +125,9 @@
 		75D2C1621B2C034D00EDB0EC /* Bedrock */ = {
 			isa = PBXGroup;
 			children = (
-				75D2C1631B2C034D00EDB0EC /* Supporting Files */,
 				75D2C17C1B2C064F00EDB0EC /* Color.swift */,
 				846CC24B1B2E6F3D00952C20 /* IndexSet.swift */,
+				75D2C1631B2C034D00EDB0EC /* Supporting Files */,
 			);
 			path = Bedrock;
 			sourceTree = "<group>";
@@ -116,6 +165,15 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84554ECD1B2EAEFF000BA8EA /* Bedrock.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84554EB01B2EAEA9000BA8EA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84554ECE1B2EAEFF000BA8EA /* Bedrock.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +216,43 @@
 			productReference = 75D2C16B1B2C034D00EDB0EC /* BedrockTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		84554EB21B2EAEA9000BA8EA /* Bedrock-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84554ECA1B2EAEA9000BA8EA /* Build configuration list for PBXNativeTarget "Bedrock-iOS" */;
+			buildPhases = (
+				84554EAE1B2EAEA9000BA8EA /* Sources */,
+				84554EAF1B2EAEA9000BA8EA /* Frameworks */,
+				84554EB01B2EAEA9000BA8EA /* Headers */,
+				84554EB11B2EAEA9000BA8EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bedrock-iOS";
+			productName = "Bedrock-iOS";
+			productReference = 84554EB31B2EAEA9000BA8EA /* Bedrock.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		84554EBC1B2EAEA9000BA8EA /* Bedrock-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84554ECB1B2EAEA9000BA8EA /* Build configuration list for PBXNativeTarget "Bedrock-iOSTests" */;
+			buildPhases = (
+				84554EB91B2EAEA9000BA8EA /* Sources */,
+				84554EBA1B2EAEA9000BA8EA /* Frameworks */,
+				84554EBB1B2EAEA9000BA8EA /* Resources */,
+				84554ED31B2EB227000BA8EA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84554EC01B2EAEA9000BA8EA /* PBXTargetDependency */,
+			);
+			name = "Bedrock-iOSTests";
+			productName = "Bedrock-iOSTests";
+			productReference = 84554EBD1B2EAEA9000BA8EA /* Bedrock-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -166,12 +261,18 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
-				ORGANIZATIONNAME = "Robert Mozayeni";
+				ORGANIZATIONNAME = Bedrock;
 				TargetAttributes = {
 					75D2C15F1B2C034D00EDB0EC = {
 						CreatedOnToolsVersion = 6.3.2;
 					};
 					75D2C16A1B2C034D00EDB0EC = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					84554EB21B2EAEA9000BA8EA = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					84554EBC1B2EAEA9000BA8EA = {
 						CreatedOnToolsVersion = 6.3.2;
 					};
 				};
@@ -190,6 +291,8 @@
 			targets = (
 				75D2C15F1B2C034D00EDB0EC /* Bedrock */,
 				75D2C16A1B2C034D00EDB0EC /* BedrockTests */,
+				84554EB21B2EAEA9000BA8EA /* Bedrock-iOS */,
+				84554EBC1B2EAEA9000BA8EA /* Bedrock-iOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -203,6 +306,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		75D2C1691B2C034D00EDB0EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84554EB11B2EAEA9000BA8EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84554EBB1B2EAEA9000BA8EA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -231,6 +348,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		84554EAE1B2EAEA9000BA8EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84554ECF1B2EAF69000BA8EA /* Color.swift in Sources */,
+				84554ED01B2EAF69000BA8EA /* IndexSet.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84554EB91B2EAEA9000BA8EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84554ED11B2EAF6D000BA8EA /* ColorTests.swift in Sources */,
+				84554ED21B2EAF6D000BA8EA /* IndexSetTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -238,6 +373,11 @@
 			isa = PBXTargetDependency;
 			target = 75D2C15F1B2C034D00EDB0EC /* Bedrock */;
 			targetProxy = 75D2C16D1B2C034D00EDB0EC /* PBXContainerItemProxy */;
+		};
+		84554EC01B2EAEA9000BA8EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84554EB21B2EAEA9000BA8EA /* Bedrock-iOS */;
+			targetProxy = 84554EBF1B2EAEA9000BA8EA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -398,6 +538,88 @@
 			};
 			name = Release;
 		};
+		84554EC61B2EAEA9000BA8EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Bedrock/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = Bedrock;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84554EC71B2EAEA9000BA8EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Bedrock/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = Bedrock;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84554EC81B2EAEA9000BA8EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BedrockTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		84554EC91B2EAEA9000BA8EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BedrockTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -424,6 +646,24 @@
 			buildConfigurations = (
 				75D2C17A1B2C034D00EDB0EC /* Debug */,
 				75D2C17B1B2C034D00EDB0EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84554ECA1B2EAEA9000BA8EA /* Build configuration list for PBXNativeTarget "Bedrock-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84554EC61B2EAEA9000BA8EA /* Debug */,
+				84554EC71B2EAEA9000BA8EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84554ECB1B2EAEA9000BA8EA /* Build configuration list for PBXNativeTarget "Bedrock-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84554EC81B2EAEA9000BA8EA /* Debug */,
+				84554EC91B2EAEA9000BA8EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
