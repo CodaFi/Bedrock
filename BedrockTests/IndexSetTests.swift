@@ -26,7 +26,7 @@ class IndexSetTests: XCTestCase {
 	func testRangeSet() {
 		let r = 0..<5
 		let s = IndexSet(indexesInRange: r)
-		XCTAssert(s.count == r.count)
+		XCTAssert(s.count == count(r))
 		XCTAssert(s.containsIndex(0))
 		XCTAssert(s.containsIndex(1))
 		XCTAssert(s.containsIndex(2))

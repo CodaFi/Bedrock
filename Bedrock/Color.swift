@@ -8,13 +8,13 @@
 
 import Darwin
 
-struct Color {
-    let redComponent: Double
-    let greenComponent: Double
-    let blueComponent: Double
-    let alphaComponent: Double
+public struct Color {
+    public let redComponent: Double
+    public let greenComponent: Double
+    public let blueComponent: Double
+    public let alphaComponent: Double
     
-    init(red: Double, green: Double, blue: Double, alpha: Double = 1) {
+    public init(red: Double, green: Double, blue: Double, alpha: Double = 1) {
         redComponent = red
         greenComponent = green
         blueComponent = blue
@@ -22,7 +22,7 @@ struct Color {
         alphaComponent = alpha
     }
     
-    init(red255: Double, green255: Double, blue255: Double, alpha255: Double = 255) {
+    public init(red255: Double, green255: Double, blue255: Double, alpha255: Double = 255) {
         redComponent = red255 / 255.0
         greenComponent = green255 / 255.0
         blueComponent = blue255 / 255.0
@@ -30,19 +30,20 @@ struct Color {
         alphaComponent = alpha255 / 255.0
     }
     
-    init?(hex: Int){
+    public init?(hex: Int){
         
-        guard hex <= 0xFFFFFF && hex >= 0 else { return nil}
-        
-        redComponent = Double((hex & 0xFF0000) >> 16) / 255.0
-        greenComponent = Double((hex & 0x00FF00) >> 8) / 255.0
-        blueComponent = Double(hex & 0x0000FF) / 255.0
-        
-        alphaComponent = 1
+        if hex <= 0xFFFFFF && hex >= 0 {
+			redComponent = Double((hex & 0xFF0000) >> 16) / 255.0
+			greenComponent = Double((hex & 0x00FF00) >> 8) / 255.0
+			blueComponent = Double(hex & 0x0000FF) / 255.0
+			
+			alphaComponent = 1
+		}
+		return nil
     }
     
     
-    init(hue: Double, saturation: Double, brightness: Double, alpha: Double) {
+    public init(hue: Double, saturation: Double, brightness: Double, alpha: Double) {
         let r, g, b, f, p, q, t: Double
         
         let i = floor(hue * 6)
@@ -88,19 +89,19 @@ struct Color {
         
     }
     
-    func colors() -> (Double, Double, Double) {
+    public func colors() -> (Double, Double, Double) {
         return (redComponent, greenComponent, blueComponent)
     }
     
-    func colorsA() -> (Double, Double, Double, Double) {
+    public func colorsA() -> (Double, Double, Double, Double) {
         return (redComponent, greenComponent, blueComponent, alphaComponent)
     }
     
-    func colors255() -> (Double, Double, Double) {
+    public func colors255() -> (Double, Double, Double) {
         return (redComponent * 255, greenComponent * 255, blueComponent * 255)
     }
     
-    func colors255A() -> (Double, Double, Double, Double) {
+    public func colors255A() -> (Double, Double, Double, Double) {
         return (redComponent * 255, greenComponent * 255, blueComponent * 255, alphaComponent * 255)
     }
     
