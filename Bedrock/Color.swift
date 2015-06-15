@@ -14,13 +14,33 @@ struct Color {
     let blueComponent: Double
     let alphaComponent: Double
     
-    init (red: Double, green: Double, blue: Double, alpha: Double = 1) {
+    init(red: Double, green: Double, blue: Double, alpha: Double = 1) {
         redComponent = red
         greenComponent = green
         blueComponent = blue
         
         alphaComponent = alpha
     }
+    
+    init(red255: Double, green255: Double, blue255: Double, alpha255: Double = 255) {
+        redComponent = red255 / 255.0
+        greenComponent = green255 / 255.0
+        blueComponent = blue255 / 255.0
+        
+        alphaComponent = alpha255 / 255.0
+    }
+    
+    init?(hex: Int){
+        
+        guard hex <= 0xFFFFFF && hex >= 0 else { return nil}
+        
+        redComponent = Double((hex & 0xFF0000) >> 16) / 255.0
+        greenComponent = Double((hex & 0x00FF00) >> 8) / 255.0
+        blueComponent = Double(hex & 0x0000FF) / 255.0
+        
+        alphaComponent = 1
+    }
+    
     
     init(hue: Double, saturation: Double, brightness: Double, alpha: Double) {
         let r, g, b, f, p, q, t: Double
@@ -67,4 +87,21 @@ struct Color {
         alphaComponent = alpha
         
     }
+    
+    func colors() -> (Double, Double, Double) {
+        return (redComponent, greenComponent, blueComponent)
+    }
+    
+    func colorsA() -> (Double, Double, Double, Double) {
+        return (redComponent, greenComponent, blueComponent, alphaComponent)
+    }
+    
+    func colors255() -> (Double, Double, Double) {
+        return (redComponent * 255, greenComponent * 255, blueComponent * 255)
+    }
+    
+    func colors255A() -> (Double, Double, Double, Double) {
+        return (redComponent * 255, greenComponent * 255, blueComponent * 255, alphaComponent * 255)
+    }
+    
 }
