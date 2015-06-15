@@ -18,6 +18,7 @@
 		84554ED01B2EAF69000BA8EA /* IndexSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846CC24B1B2E6F3D00952C20 /* IndexSet.swift */; };
 		84554ED11B2EAF6D000BA8EA /* ColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D2C1841B2C0A9100EDB0EC /* ColorTests.swift */; };
 		84554ED21B2EAF6D000BA8EA /* IndexSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846CC24D1B2E814800952C20 /* IndexSetTests.swift */; };
+		84554ED41B2EB22E000BA8EA /* Bedrock.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84554EB31B2EAEA9000BA8EA /* Bedrock.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		846CC24C1B2E6F3D00952C20 /* IndexSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846CC24B1B2E6F3D00952C20 /* IndexSet.swift */; };
 		846CC24E1B2E814800952C20 /* IndexSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846CC24D1B2E814800952C20 /* IndexSetTests.swift */; };
 /* End PBXBuildFile section */
@@ -38,6 +39,19 @@
 			remoteInfo = "Bedrock-iOS";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		84554ED31B2EB227000BA8EA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				84554ED41B2EB22E000BA8EA /* Bedrock.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		75D2C1601B2C034D00EDB0EC /* Bedrock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bedrock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,9 +125,9 @@
 		75D2C1621B2C034D00EDB0EC /* Bedrock */ = {
 			isa = PBXGroup;
 			children = (
-				75D2C1631B2C034D00EDB0EC /* Supporting Files */,
 				75D2C17C1B2C064F00EDB0EC /* Color.swift */,
 				846CC24B1B2E6F3D00952C20 /* IndexSet.swift */,
+				75D2C1631B2C034D00EDB0EC /* Supporting Files */,
 			);
 			path = Bedrock;
 			sourceTree = "<group>";
@@ -227,6 +241,7 @@
 				84554EB91B2EAEA9000BA8EA /* Sources */,
 				84554EBA1B2EAEA9000BA8EA /* Frameworks */,
 				84554EBB1B2EAEA9000BA8EA /* Resources */,
+				84554ED31B2EB227000BA8EA /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -642,6 +657,7 @@
 				84554EC71B2EAEA9000BA8EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84554ECB1B2EAEA9000BA8EA /* Build configuration list for PBXNativeTarget "Bedrock-iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -650,6 +666,7 @@
 				84554EC91B2EAEA9000BA8EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
