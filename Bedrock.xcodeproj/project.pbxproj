@@ -11,6 +11,8 @@
 		75D2C17D1B2C064F00EDB0EC /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D2C17C1B2C064F00EDB0EC /* Color.swift */; };
 		75D2C1831B2C08F500EDB0EC /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D2C17C1B2C064F00EDB0EC /* Color.swift */; };
 		75D2C1851B2C0A9100EDB0EC /* ColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D2C1841B2C0A9100EDB0EC /* ColorTests.swift */; };
+		846CC24C1B2E6F3D00952C20 /* IndexSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846CC24B1B2E6F3D00952C20 /* IndexSet.swift */; };
+		846CC24E1B2E814800952C20 /* IndexSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846CC24D1B2E814800952C20 /* IndexSetTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +32,8 @@
 		75D2C1711B2C034D00EDB0EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75D2C17C1B2C064F00EDB0EC /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		75D2C1841B2C0A9100EDB0EC /* ColorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorTests.swift; sourceTree = "<group>"; };
+		846CC24B1B2E6F3D00952C20 /* IndexSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexSet.swift; sourceTree = "<group>"; };
+		846CC24D1B2E814800952C20 /* IndexSetTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexSetTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,7 @@
 			children = (
 				75D2C1631B2C034D00EDB0EC /* Supporting Files */,
 				75D2C17C1B2C064F00EDB0EC /* Color.swift */,
+				846CC24B1B2E6F3D00952C20 /* IndexSet.swift */,
 			);
 			path = Bedrock;
 			sourceTree = "<group>";
@@ -90,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				75D2C1841B2C0A9100EDB0EC /* ColorTests.swift */,
+				846CC24D1B2E814800952C20 /* IndexSetTests.swift */,
 				75D2C1701B2C034D00EDB0EC /* Supporting Files */,
 			);
 			path = BedrockTests;
@@ -211,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75D2C17D1B2C064F00EDB0EC /* Color.swift in Sources */,
+				846CC24C1B2E6F3D00952C20 /* IndexSet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +227,7 @@
 			files = (
 				75D2C1851B2C0A9100EDB0EC /* ColorTests.swift in Sources */,
 				75D2C1831B2C08F500EDB0EC /* Color.swift in Sources */,
+				846CC24E1B2E814800952C20 /* IndexSetTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
