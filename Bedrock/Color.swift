@@ -38,6 +38,7 @@ public struct Color {
 			blueComponent = Double(hex & 0x0000FF) / 255.0
 			
 			alphaComponent = 1
+			return
 		}
 		return nil
     }
