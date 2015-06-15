@@ -9,4 +9,4 @@ Bedrock is an attempt at building a 100% Swift open source framework that covers
 ¯\\_(ツ)\_/¯
 
 
-This project is maintained by @rsmoz and @CodaFi.
+This project is maintained by [@rsmoz](https://github.com/rsmoz) and [@CodaFi](https://github.com/codafi).
