@@ -261,7 +261,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
-				ORGANIZATIONNAME = "Robert Mozayeni";
+				ORGANIZATIONNAME = Bedrock;
 				TargetAttributes = {
 					75D2C15F1B2C034D00EDB0EC = {
 						CreatedOnToolsVersion = 6.3.2;
