@@ -59,6 +59,7 @@ struct FileManager {
 		}
 
 		closedir(dir)
+		free(buf)
 		return res
 	}
 }
