@@ -32,6 +32,7 @@ Bedrock is an attempt at building a 100% Swift open source framework that covers
 * NSPipe
 * NSPort
 * NSStream
+* NSExpression
 
 ¯\\_(ツ)\_/¯
 
