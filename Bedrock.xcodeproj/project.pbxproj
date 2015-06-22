@@ -19,6 +19,8 @@
 		84554ED11B2EAF6D000BA8EA /* ColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D2C1841B2C0A9100EDB0EC /* ColorTests.swift */; };
 		84554ED21B2EAF6D000BA8EA /* IndexSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846CC24D1B2E814800952C20 /* IndexSetTests.swift */; };
 		84554ED41B2EB22E000BA8EA /* Bedrock.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84554EB31B2EAEA9000BA8EA /* Bedrock.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84554EE31B2EBE27000BA8EA /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84554EE21B2EBE27000BA8EA /* FileManager.swift */; };
+		84554EE41B2EBE27000BA8EA /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84554EE21B2EBE27000BA8EA /* FileManager.swift */; };
 		846CC24C1B2E6F3D00952C20 /* IndexSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846CC24B1B2E6F3D00952C20 /* IndexSet.swift */; };
 		846CC24E1B2E814800952C20 /* IndexSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846CC24D1B2E814800952C20 /* IndexSetTests.swift */; };
 /* End PBXBuildFile section */
@@ -63,6 +65,7 @@
 		84554EB31B2EAEA9000BA8EA /* Bedrock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bedrock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84554EBD1B2EAEA9000BA8EA /* Bedrock-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bedrock-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84554ECC1B2EAEFF000BA8EA /* Bedrock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bedrock.h; path = Bedrock/Bedrock.h; sourceTree = "<group>"; };
+		84554EE21B2EBE27000BA8EA /* FileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 		846CC24B1B2E6F3D00952C20 /* IndexSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexSet.swift; sourceTree = "<group>"; };
 		846CC24D1B2E814800952C20 /* IndexSetTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexSetTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,6 +130,7 @@
 			children = (
 				75D2C17C1B2C064F00EDB0EC /* Color.swift */,
 				846CC24B1B2E6F3D00952C20 /* IndexSet.swift */,
+				84554EE21B2EBE27000BA8EA /* FileManager.swift */,
 				75D2C1631B2C034D00EDB0EC /* Supporting Files */,
 			);
 			path = Bedrock;
@@ -333,6 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84554EE31B2EBE27000BA8EA /* FileManager.swift in Sources */,
 				75D2C17D1B2C064F00EDB0EC /* Color.swift in Sources */,
 				846CC24C1B2E6F3D00952C20 /* IndexSet.swift in Sources */,
 			);
@@ -352,6 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84554EE41B2EBE27000BA8EA /* FileManager.swift in Sources */,
 				84554ECF1B2EAF69000BA8EA /* Color.swift in Sources */,
 				84554ED01B2EAF69000BA8EA /* IndexSet.swift in Sources */,
 			);
